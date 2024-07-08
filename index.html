@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <html>
     <head>
 	    <meta charset="utf-8">
@@ -7,29 +7,32 @@
         <link rel="stylesheet" href="/Code-The-Future/main.css">
         <script type="text/javascript" src="./Code-The-Future/main.js"></script>
     </head>
-    <body>
+    <body class="index-body">
         <div>
-            <h2 class="Page-Title">Where are you thinking of visiting?</p>
-            <img src="./earth.jpg" alt="Plant Earth">
-            <nav>
-                <ul>
-                    <li><a href="/Code-The-Future/Africa/Africa.html">Africa</a></li>
-                    <li><a href="/Code-The-Future/Asia/Asia.html">Asia</a></li>
-                    <li><a href="/Code-The-Future/Europe/Europe.html">Europe</a></li>
-                    <li><a href="/Code-The-Future/North-America/North-America.html">North/Central America</a></li>
-                    <li><a href="/Code-The-Future/South-America/South-America.html">South America</a></li>
-                </ul>
-            </nav>
+            <h2 class="page-title">Where are you thinking of visiting?</h2>
+            <img class="globe-image"  src="./earth.jpg" alt="Plant Earth">
+                <div class="continent-list">
+                    <a class="continent-list-text" href="/Code-The-Future/Africa/Africa.html">Africa</a>
+                    <a class="continent-list-text" href="/Code-The-Future/Asia/Asia.html">Asia</a>
+                    <a class="continent-list-text" href="/Code-The-Future/Europe/Europe.html">Europe</a>
+                    <a class="continent-list-text" href="/Code-The-Future/North-America/North-America.html">North/Central America</a>
+                    <a class="continent-list-text" href="/Code-The-Future/South-America/South-America.html">South America</a>
+                </div>
         </div>
 
-        <h2>For personalised trip share with us your details!</h2>
-        <form  action="./formSuccess.html">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
-            <input type="submit" value="Submit">
-
-        </form>
+        <div class="form">
+            <p class="form-header">For personalised trips please share with us your details!</p>
+            <form  action="./formSuccess.html">
+                <label for="fname">First name:</label><br><br>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+                <label for="lname">Last name:</label><br><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="email">Email Address</label><br><br>
+                <input type="email" id="email" name="email"><br><br><br>
+                <input type="submit" value="Submit"><br><br>
+                
+            </form>
+        </div>
+        
     </body>
 </html>
